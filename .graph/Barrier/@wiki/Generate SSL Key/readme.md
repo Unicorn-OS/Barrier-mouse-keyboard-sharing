@@ -14,6 +14,6 @@ https://github.com/debauchee/barrier/pull/1753
 >A: Use WSL2 to install `openssl` and generate SSL key
 
 code:
-- `openssl req -x509 -nodes -days 9999 -subj /CN=Barrier -newkey rsa:4096 -keyout Barrier.pem -out Barrier.pem`
+`openssl req -x509 -nodes -days 9999 -subj /CN=Barrier -newkey rsa:4096 -keyout Barrier.pem -out Barrier.pem`
 
 
