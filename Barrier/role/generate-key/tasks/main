@@ -2,4 +2,7 @@
 
 # Linux:
 openssl req -x509 -nodes -days 365 -subj /CN=Barrier -newkey rsa:2048 -keyout ~/.local/share/barrier/SSL/Barrier.pem -out ~/.local/share/barrier/SSL/Barrier.pem
+
+mkdir -p ~/.local/share/barrier/SSL/SSL
+
 openssl x509 -fingerprint -sha1 -noout -in ~/.local/share/barrier/SSL/Barrier.pem > ~/.local/share/barrier/SSL/SSL/Fingerprints\Local.txt
