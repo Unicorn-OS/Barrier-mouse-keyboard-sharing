@@ -1,0 +1,8 @@
+---
+- name: set Default config file
+  copy:
+    src: barrier.conf
+    dest: C:\Program Files\Barrier
+
+- name: generate Key
+  script: generate-key.bat
