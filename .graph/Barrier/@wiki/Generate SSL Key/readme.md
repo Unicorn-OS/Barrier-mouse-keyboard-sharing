@@ -1,5 +1,6 @@
 # Linux
 https://github.com/debauchee/barrier/issues/965
+- test: works, Ubuntu 22.10
 
 # Windows
 https://github.com/debauchee/barrier/wiki/Command-Line#ssl_config
