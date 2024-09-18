@@ -2,6 +2,7 @@
 # If ansible controller is on LAN, `desktop` should be the same subnet as `alt_desktop`
 
 [primary_desktop]
+#192.168.122.2
 10.0.1.3
 
 [primary_desktop:vars]
@@ -12,4 +13,3 @@ ansible_become_password=u
 
 [second_desktop:vars]
 ansible_become_password=u
-
