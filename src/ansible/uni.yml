@@ -1,7 +1,18 @@
-- hosts: test
+- hosts: desktop, test
   gather_facts: true
-
-- hosts: desktop, test #localhost
   roles:
-  # - UniInc.Gnome-Ergonomic-tweaks
+  - UniInc.Gnome-Ergonomic-tweaks
   - ansible-role-Barrier-mouse-keyboard
+  - ansible-role-Barrier-OpenSSL
+
+- hosts: desktop
+  vars:
+    barrier_role: server
+  roles:
+  - ansible-role-Barrier-config
+
+- hosts: test
+  vars:
+    barrier_role: client
+  roles:
+  - ansible-role-Barrier-config
