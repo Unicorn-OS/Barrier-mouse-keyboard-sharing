@@ -1,3 +1,4 @@
+---
 - hosts: primary_desktop, second_desktop
   gather_facts: true
   roles:
@@ -17,4 +18,3 @@
     - var/second_desktop.yml
   roles:
   - UniInc.Barrier-config
-  # - ansible-role-Barrier-config
