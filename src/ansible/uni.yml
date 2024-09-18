@@ -7,7 +7,7 @@
 - hosts: desktop
   vars_files:
     var/shared.yml
-    var/server.yml
+    var/desktop.yml
   roles:
   # - UniInc.Barrier-config
   - ansible-role-Barrier-config
@@ -15,7 +15,7 @@
 - hosts: alt_desktop
   vars_files:
     var/shared.yml
-    var/client.yml
+    var/alt_desktop.yml
   roles:
   # - UniInc.Barrier-config
   - ansible-role-Barrier-config

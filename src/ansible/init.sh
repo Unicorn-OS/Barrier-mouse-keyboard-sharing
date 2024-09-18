@@ -1,4 +1,4 @@
-ansible-galaxy install -r roles/requirements.yml
+#ansible-galaxy install -r roles/requirements.yml
 
 cd var/.example ; ./template.sh
 
