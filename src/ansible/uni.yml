@@ -3,5 +3,5 @@
 
 - hosts: desktop, test #localhost
   roles:
-  - UniInc.Gnome-Ergonomic-tweaks
+  # - UniInc.Gnome-Ergonomic-tweaks
   - ansible-role-Barrier-mouse-keyboard
