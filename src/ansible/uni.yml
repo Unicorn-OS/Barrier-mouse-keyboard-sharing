@@ -1,21 +1,20 @@
-- hosts: desktop, alt_desktop
+- hosts: primary_desktop, second_desktop
   gather_facts: true
-  roles:
-  - UniInc.Gnome-Ergonomic-tweaks
-  - UniInc.Barrier-meta
+#   roles:
+#   - UniInc.Gnome-Ergonomic-tweaks
+#   - UniInc.Barrier-meta
 
-- hosts: desktop
-  vars_files:
-    var/shared.yml
-    var/desktop.yml
-  roles:
-  # - UniInc.Barrier-config
-  - ansible-role-Barrier-config
+# - hosts: primary_desktop
+#   vars_files:
+#     - var/shared.yml
+#     - var/primary_desktop.yml
+#   roles:
+#   - UniInc.Barrier-config
 
-- hosts: alt_desktop
+- hosts: second_desktop
   vars_files:
-    var/shared.yml
-    var/alt_desktop.yml
+    - var/shared.yml
+    - var/second_desktop.yml
   roles:
   # - UniInc.Barrier-config
   - ansible-role-Barrier-config
