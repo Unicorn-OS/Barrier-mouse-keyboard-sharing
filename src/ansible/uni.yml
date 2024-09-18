@@ -5,13 +5,17 @@
   - UniInc.Barrier-meta
 
 - hosts: desktop
-  vars:
-    barrier_role: client
+  vars_files:
+    var/shared.yml
+    var/server.yml
   roles:
-  - UniInc.Barrier-config
+  # - UniInc.Barrier-config
+  - ansible-role-Barrier-config
 
 - hosts: alt_desktop
-  vars:
-    barrier_role: server
+  vars_files:
+    var/shared.yml
+    var/client.yml
   roles:
-  - UniInc.Barrier-config
+  # - UniInc.Barrier-config
+  - ansible-role-Barrier-config

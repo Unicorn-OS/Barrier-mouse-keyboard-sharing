@@ -1,13 +1,16 @@
+# If these are virtual machines, you can use 'NAT' interface, of the form: `192.168.122.${n}`
+# If ansible controller is on LAN, `desktop` should be the same subnet as `alt_desktop`
+
 localhost ansible_connection=local ansible_become_password=u
 
-[desktop]
-10.0.1.39
+[desktop] 
+10.0.1.3
 
 [desktop:vars]
 ansible_become_password=u
 
 [alt_desktop]
-10.0.1.39
+10.0.1.4
 
 [alt_desktop:vars]
 ansible_become_password=u
