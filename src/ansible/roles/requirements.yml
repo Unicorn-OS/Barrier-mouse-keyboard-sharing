@@ -1,4 +1,4 @@
 ---
 roles:
 - UniInc.Gnome-Ergonomic-tweaks
-#- UniInc.Barrier-mouse-keyboard
+- UniInc.Barrier-meta

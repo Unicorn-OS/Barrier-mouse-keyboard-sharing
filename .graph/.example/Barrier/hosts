@@ -1,0 +1,20 @@
+# Barrier nodes
+[desktop]
+10.0.1.39
+
+[desktop:vars]
+ansible_become_password=u
+
+[alt_desktop]
+10.0.1.45
+
+[alt_desktop:vars]
+ansible_become_password=u
+
+
+# Barrier roles
+[barrier_client:children]
+desktop
+
+[barrier_server:children]
+alt_desktop
