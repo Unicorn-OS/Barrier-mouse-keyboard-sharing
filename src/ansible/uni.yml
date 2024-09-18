@@ -1,0 +1,7 @@
+- hosts: test
+  gather_facts: true
+
+- hosts: desktop, test #localhost
+  roles:
+  - UniInc.Gnome-Ergonomic-tweaks
+  - ansible-role-Barrier-mouse-keyboard
