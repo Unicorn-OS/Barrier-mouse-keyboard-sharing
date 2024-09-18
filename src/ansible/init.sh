@@ -1,5 +1,5 @@
-#ansible-galaxy install -r roles/requirements.yml
+ansible-galaxy install -r roles/requirements.yml
 
-cd var ; ./copy.sh
+cd var/.example ; ./template.sh
 
 #ansible-playbook uni.yml
