@@ -1,4 +1,5 @@
-# Barrier nodes
+localhost ansible_connection=local ansible_become_password=u
+
 [desktop]
 10.0.1.39
 
@@ -6,15 +7,14 @@
 ansible_become_password=u
 
 [alt_desktop]
-10.0.1.45
+10.0.1.39
 
 [alt_desktop:vars]
 ansible_become_password=u
 
-
-# Barrier roles
+# Barrier
 [barrier_client:children]
-desktop
+alt_desktop
 
 [barrier_server:children]
-alt_desktop
+desktop
